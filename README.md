@@ -49,6 +49,9 @@ This only gets you 80-85% of the hashrate of two normal threads, but it will sav
 other uses.
 (But the cache will still be full, so you might want to free up some cache if you want to use the computer while mining.)
 
+#### HUGEPAGE AND CPU AFFINITY
+Instructions in the PGP Signed Readme included in the archive!
+
 #### WINDOWS 10 MININUM REQUIREMENTS:
 Visual C++ redistributable 2015 X64 [Windows]
 
