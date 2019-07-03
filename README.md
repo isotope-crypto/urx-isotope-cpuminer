@@ -114,8 +114,8 @@ Even the newest Pentium and Celeron CPUs are often missing features.
 The archive contains all respective binaries for many different CPU types!
 Use the native version if you are not sure of the type of CPU instruction set for your CPU.
 
-#### ARCH EXE NOTE:
-Use your respective .exe per your processor's instruction set!
+#### WINDOWS ARCH EXE NOTE:
+Use your respective architecture .exe per your processor's instruction set!
 
 64Bit Exe name	|		Compile flags		|	Arch name
 ------------ | -------------| -------------
@@ -126,6 +126,20 @@ urx-isotope-cpuminer-avx2.exe | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelak
 urx-isotope-cpuminer-sse42.exe | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem 
 urx-isotope-cpuminer-zen.exe | "-march=znver1 -DRYZEN_" | Ryzen
+
+
+#### UBUNTU 18.04 LINUX ARCH NOTE:
+Use your respective architecture per your processor's instruction set!
+
+64Bit Exe name	|		Compile flags		|	Arch name
+------------ | -------------| -------------
+urx-isotope-cpuminer | "-march=native" | Native
+urx-isotope-cpuminer-avx512 | "-march=skylake-avx512" | Skylake
+urx-isotope-cpuminer-avx | "-march=corei7-avx" | Sandy-Ivybridge
+urx-isotope-cpuminer-avx2 | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
+urx-isotope-cpuminer-sse42 | "-march=westmere" | Westmere
+urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem 
+urx-isotope-cpuminer-dryzen | "-march=znver1 -DRYZEN_" | Ryzen
 
 #### NOTE:
 The following tips may be useful for older AMD CPUs.
