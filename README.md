@@ -128,7 +128,7 @@ urx-isotope-cpuminer-avx.exe | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2.exe | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
 urx-isotope-cpuminer-sse42.exe | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem 
-urx-isotope-cpuminer-zen.exe | "-march=znver1 -DRYZEN_" | Ryzen
+urx-isotope-cpuminer-dryzen.exe | "-march=znver1 -DRYZEN_" | Ryzen
 
 
 #### UBUNTU 18.04 LINUX ARCH NOTE:
