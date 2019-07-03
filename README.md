@@ -247,5 +247,5 @@ Support for even older x86_64 without AES_NI or SSE2 is not availble.
                           yescryptr32   WAVI
                           yespower      Cryply
                           yespowerr16   Yenten (YTN)
-                          yespowerurx	UraniumX (URX)
+                          yespowerurx   UraniumX (URX)
                           zr5           Ziftr
