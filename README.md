@@ -1,5 +1,5 @@
 ### UraniumX Isotope CPUminer with multi algo support and YespowerURX!
-w/Optimizations with Hugepages...
+w/Optimizations with Hugepages... v1.0.4 and up.
 
 You must enable hugepage support in your OS to lock pages in memory or you will not benefit from the optimization!
 
