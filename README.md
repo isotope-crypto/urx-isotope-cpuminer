@@ -1,4 +1,31 @@
-### UraniumX Isotope CPUminer v1.0.3 with multi algo support and YespowerURX!
+### UraniumX Isotope CPUminer with multi algo support and YespowerURX!
+Optimizations with Hugepages...
+
+You must enable hugepage support in your OS to lock pages in memory or you will not benefit from the optimization!
+
+1. See if Hugepages are available for your system: [LINUX]
+
+> cat /sys/kernel/mm/transparent_hugepage/enabled
+
+> OUTPUT: always [madvise] never
+
+##### NOTE: If [never] is selected... You do not have hugepages on your system!
+
+2. Check the state of THP and the size of each Huge-Page and see your systems Huge-Page total with this command:
+
+> cat /proc/meminfo | grep Huge
+
+3. You can add them on the fly, but hugepages will not be available at system boot!
+
+Be sure to match what is available in your system!
+
+##### LINUX EXAMPLES:
+> sudo sysctl -w vm.nr_hugepages=1024
+
+##### NOTE:
+See the README in the compressed archive on how to add hugepages at LINUX system boot...
+Windows can also lock pages in memory, instructions are in the README!
+
 
 GitHub: isotope-crypto
 
@@ -63,11 +90,11 @@ Precompiled Windows binaries are built on a Windows host using SYS2 and Mingw
 
 #### INSTALL ON UBUNTU 18.04 LINUX:
 
-Extract UraniumX-Isotope-CPUminer_v1.0.3_linux-x86.[tar.gz or .zip] using an extract utility.
+Extract UraniumX-Isotope-CPUminer_vx.x.x_linux-x86.[tar.gz or .zip] using an extract utility.
 
-tar -xvzf UraniumX-Isotope-CPUminer_v1.0.3_linux-x86.tar.gz
+tar -xvzf UraniumX-Isotope-CPUminer_vx.x.x_linux-x86.tar.gz
 
-cd UraniumX-Isotope-CPUminer_v1.0.3_linux-x86
+cd UraniumX-Isotope-CPUminer_vx.x.x_linux-x86
 
 cd native [or other CPU Architecture type folder...]
 
@@ -75,8 +102,8 @@ cd native [or other CPU Architecture type folder...]
 The archive contains all respective binaries for many different CPU types!
 Use the native version if you are not sure of the type of CPU instructions of your CPU.
 
-#### INSTALL ON WINDOWS 10
-Extract UraniumX-Isotope-CPUminer_v1.0.3_Windows-x86_64.zip using an extract utility.
+#### INSTALL ON WINDOWS 10 [ Don't have 32 bit programs on the system, it will report an error and not work! ]
+Extract UraniumX-Isotope-CPUminer_vx.x.x_Windows-x86_64.zip using an extract utility.
 
 1. Open the "Start.cmd" file shell script within the folder that matches your processor file type.
    NOTE: If you are not sure of your CPU, the native version will be fine and figure it out later! 
@@ -124,11 +151,16 @@ Use your respective architecture .exe per your processor's instruction set!
 ------------ | -------------| -------------
 urx-isotope-cpuminer.exe | "-march=native" | Native
 urx-isotope-cpuminer-avx512.exe | "-march=skylake-avx512" | Skylake
-urx-isotope-cpuminer-avx.exe | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2.exe | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
+urx-isotope-cpuminer-avx.exe | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-sse42.exe | "-march=westmere" | Westmere
-urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem 
-urx-isotope-cpuminer-dryzen.exe | "-march=znver1 -DRYZEN_" | Ryzen
+urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem
+urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
+
+##### DROPPED SUPPORT in version v1.0.4
+64Bit Exe name	|		Compile flags		|	Arch name
+------------ | -------------| -------------
+//urx-isotope-cpuminer-dryzen.exe | "-march=znver1 -DRYZEN_" | Ryzen
 
 
 #### UBUNTU 18.04 LINUX ARCH NOTE:
@@ -141,8 +173,13 @@ urx-isotope-cpuminer-avx512 | "-march=skylake-avx512" | Skylake
 urx-isotope-cpuminer-avx | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2 | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
 urx-isotope-cpuminer-sse42 | "-march=westmere" | Westmere
-urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem 
-urx-isotope-cpuminer-dryzen | "-march=znver1 -DRYZEN_" | Ryzen
+urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem
+urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
+
+##### DROPPED SUPPORT in version v1.0.4
+64Bit Exe name	|		Compile flags		|	Arch name
+------------ | -------------| -------------
+//urx-isotope-cpuminer-dryzen | "-march=znver1 -DRYZEN_" | Ryzen
 
 #### NOTE:
 The following tips may be useful for older AMD CPUs.
@@ -159,7 +196,7 @@ Problems have included compile errors and poor performance.
 These users are recommended to compile manually specifying "-march=btver1" on the configure
 command line.
 
-Support for even older x86_64 without AES_NI or SSE2 is not availble.
+### Support for even older x86_64 without AES_NI or SSE2 is not availble.
 
 #### Isotope Crypto  ( ͡° ͜ʖ ͡°)
 
