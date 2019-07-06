@@ -166,7 +166,7 @@ urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
 #### UBUNTU 18.04 LINUX ARCH NOTE:
 Use your respective architecture per your processor's instruction set!
 
-64Bit Exe name	|		Compile flags		|	Arch name
+64Bit name	|		Compile flags		|	Arch name
 ------------ | -------------| -------------
 urx-isotope-cpuminer | "-march=native" | Native
 urx-isotope-cpuminer-avx512 | "-march=skylake-avx512" | Skylake
@@ -174,10 +174,10 @@ urx-isotope-cpuminer-avx | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2 | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
 urx-isotope-cpuminer-sse42 | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem
-urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
+urx-isotope-cpuminer-ryzen | "-march=znver1" | Ryzen
 
 ##### DROPPED SUPPORT in version v1.0.4
-64Bit Exe name	|		Compile flags		|	Arch name
+64Bit name	|		Compile flags		|	Arch name
 ------------ | -------------| -------------
 //urx-isotope-cpuminer-dryzen | "-march=znver1 -DRYZEN_" | Ryzen
 
