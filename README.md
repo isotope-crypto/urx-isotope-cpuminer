@@ -147,6 +147,8 @@ Use the native version if you are not sure of the type of CPU instruction set fo
 #### WINDOWS ARCH EXE NOTE:
 Use your respective architecture .exe per your processor's instruction set!
 
+Don't know? You can download this utility... https://cpuid.com/softwares/cpu-z.html
+
 64Bit Exe name	|		Compile flags		|	Arch name
 ------------ | -------------| -------------
 urx-isotope-cpuminer.exe | "-march=native" | Native
@@ -165,6 +167,7 @@ urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
 
 #### UBUNTU 18.04 LINUX ARCH NOTE:
 Use your respective architecture per your processor's instruction set!
+Don't know? You can just run in a terminal: lscpu
 
 64Bit name	|		Compile flags		|	Arch name
 ------------ | -------------| -------------
