@@ -84,17 +84,17 @@ Visual C++ redistributable 2015 X64 [Windows]
 
 Precompiled Windows binaries are built on a Windows host using SYS2 and Mingw
 
-#### INSTALL LINUX DEPENDENCIES FOR UBUNTU 18.04 LINUX
+#### INSTALL LINUX DEPENDENCIES FOR UBUNTU [LINUX]
 
 > sudo apt-get install build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev curl openssl m4
 
-#### INSTALL ON UBUNTU 18.04 LINUX:
+#### INSTALL ON UBUNTU LINUX:
 
-Extract UraniumX-Isotope-CPUminer_vx.x.x_linux-x86.[tar.gz or .zip] using an extract utility.
+Extract UraniumX-Isotope-CPUminer_vx.x.x_linux-x86_xx.xx.[tar.gz or .zip] using an extract utility.
 
-tar -xvzf UraniumX-Isotope-CPUminer_vx.x.x_linux-x86.tar.gz
+tar -xvzf UraniumX-Isotope-CPUminer_vx.x.x_linux-x86.tar_xx.xx.gz
 
-cd UraniumX-Isotope-CPUminer_vx.x.x_linux-x86
+cd UraniumX-Isotope-CPUminer_vx.x.x_linux-x86_xx.xx
 
 cd native [or other CPU Architecture type folder...]
 
@@ -105,17 +105,14 @@ Use the native version if you are not sure of the type of CPU instructions of yo
 #### INSTALL ON WINDOWS 10 [ Don't have 32 bit programs on the system, it will report an error and not work! ]
 Extract UraniumX-Isotope-CPUminer_vx.x.x_Windows-x86_64.zip using an extract utility.
 
-1. Open the "Start.cmd" file shell script within the folder that matches your processor file type.
+1. Open the "start.cmd" file shell script within the folder that matches your processor file type.
    NOTE: If you are not sure of your CPU, the native version will be fine and figure it out later! 
 
 2. Choose the correct syntax for the CPU type that you are using.
 
-3. Enter your choice of pool, your UraniumX wallet address or other settings within the syntax line you
-   are using or donate to me using the sample syntax provided to test.
+3. Enter your choice of pool, your UraniumX wallet address or other settings within the syntax line or donate to me using the sample syntax provided to test.
    
-4. Open up a terminal within the folder of the CPU version you are using and at the prompt enter: ./Start
-
-5. Happy Mining! -Isotope Crypto
+4. Happy Mining! -Isotope Crypto
 
 #### WINDOWS MINING SYNTAX:
 Choose your arch and edit with your choice of pool and wallet address!
@@ -125,7 +122,7 @@ Open a cmd terminal and run the following...
 > urx-isotope-cpuminer.exe -a yespowerurx -o stratum+tcp://uranium-x.net:443 -u UjyU6wt51jwUd9bwogoKkPkE6UJCupRhf3 -p c=URX,d=1,donate
 
 #### NOTE: DO NOT HAVE ANY SPACES BETWEEN YOUR OPTIONS!!
-[IE:: x,c=URX,d=1,rigname,etc]
+[IE:: x,c=URX,d=0.5,rigname,etc]
 
 urx-isotope-cpuminer.exe is a console program that is executed from a DOS command prompt.
 There is no GUI and no mouse support.
@@ -157,7 +154,7 @@ urx-isotope-cpuminer-avx2.exe | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelak
 urx-isotope-cpuminer-avx.exe | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-sse42.exe | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem
-urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | Ryzen
+urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | AMD Ryzen, Threadripper
 
 ##### DROPPED SUPPORT in version v1.0.4
 64Bit Exe name	|		Compile flags		|	Arch name
@@ -177,7 +174,7 @@ urx-isotope-cpuminer-avx | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2 | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
 urx-isotope-cpuminer-sse42 | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem
-urx-isotope-cpuminer-ryzen | "-march=znver1" | Ryzen
+urx-isotope-cpuminer-ryzen | "-march=znver1" | AMD Ryzen, Threadripper
 
 ##### DROPPED SUPPORT in version v1.0.4
 64Bit name	|		Compile flags		|	Arch name
