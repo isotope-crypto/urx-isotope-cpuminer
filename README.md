@@ -152,7 +152,7 @@ urx-isotope-cpuminer.exe | "-march=native" | Native
 urx-isotope-cpuminer-avx512.exe | "-march=skylake-avx512" | Skylake
 urx-isotope-cpuminer-avx2.exe | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
 urx-isotope-cpuminer-avx.exe | "-march=corei7-avx" | Sandy-Ivybridge
-urx-isotope-cpuminer-sse42.exe | "-march=westmere" | Westmere
+urx-isotope-cpuminer-aes-sse42.exe | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2.exe | "-msse2" | Core2, Nehalem
 urx-isotope-cpuminer-ryzen.exe | "-march=znver1" | AMD Ryzen, Threadripper
 
@@ -172,7 +172,7 @@ urx-isotope-cpuminer | "-march=native" | Native
 urx-isotope-cpuminer-avx512 | "-march=skylake-avx512" | Skylake
 urx-isotope-cpuminer-avx | "-march=corei7-avx" | Sandy-Ivybridge
 urx-isotope-cpuminer-avx2 | "-march=core-avx2" | Haswell, Sky-Kaby-Coffeelake
-urx-isotope-cpuminer-sse42 | "-march=westmere" | Westmere
+urx-isotope-cpuminer-aes-sse42 | "-march=westmere" | Westmere
 urx-isotope-cpuminer-sse2 | "-msse2" | Core2, Nehalem
 urx-isotope-cpuminer-ryzen | "-march=znver1" | AMD Ryzen, Threadripper
 
