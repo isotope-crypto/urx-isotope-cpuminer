@@ -119,7 +119,7 @@ Choose your arch and edit with your choice of pool and wallet address!
 Open a cmd terminal and run the following...
 
 #### SYNTAX: [Use the correct named file for the syntax architecture!]
-> urx-isotope-cpuminer.exe -a yespowerurx -o stratum+tcp://uranium-x.net:443 -u UjyU6wt51jwUd9bwogoKkPkE6UJCupRhf3 -p c=URX,d=1,donate
+> urx-isotope-cpuminer.exe -a yespowerurx -o stratum+tcp://uranium-x.net:4430 -u UjyU6wt51jwUd9bwogoKkPkE6UJCupRhf3.donate -p x
 
 #### NOTE: DO NOT HAVE ANY SPACES BETWEEN YOUR OPTIONS!!
 [IE:: x,c=URX,d=0.5,rigname,etc]
